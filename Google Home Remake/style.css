@@ -1,0 +1,155 @@
+*{
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+body, p{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: auto;
+    padding: 1em;
+    align-items: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav a img{
+    height: 32px;
+}
+nav a .avi{
+    border-radius: 100%;
+}
+main{
+    width: 50%;
+    margin: 4em auto;
+    text-align: center;
+}
+main .gif{
+    position: absolute;
+    border-radius: 100%;
+    height: 32px;
+    z-index: 1;
+    top: 36%;
+    right: 72%;
+}
+input{
+    width: 80%;
+    padding: 1em;
+    margin-top: 2em;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    outline: none;
+}
+.btncon{
+    margin-top: 1em;
+}
+input:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+.btncon button{
+    font-size: 14px;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    margin: 11px 5px;
+    cursor: pointer;
+    color: #3c4043;
+    height: 36px;
+}
+.btncon button:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+footer{
+    background-color: #f2f2f2;
+    font-size: 15px;
+    width: 100%;
+    position: absolute;
+    margin-top: 2.9em;
+    top: 80%;
+    justify-content: space-evenly;
+}
+.footertop{
+    padding: 1em;
+}
+.footerbottom{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dadce0;
+}
+.footerbottom li{
+    margin-right: 1em;
+    display: inline;
+    list-style: none;
+}
+footer div, .footerbottom a{
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+main .offer{
+    line-height: 28px;
+    display: inline-block;
+    font-size: small;
+    text-align: center;
+    margin-top: 1em;
+}
+main .offer a{
+    font-size: small;
+    text-align: center;
+    margin: 4px;
+    color: #1a0dab;
+}
+.bcir{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.2;
+    height: 80%;
+}
+.mcir{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.5;
+    height: 60%;
+}
+.scir{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+    opacity: 0.7;
+    height: 50%;
+}
+.circles img:hover{
+    filter: drop-shadow(100px 10px 50px rgb(242, 255, 0));
+}
+
+@media screen and (max-width: 856px){
+    nav{
+        flex-direction: column;
+        width: 50px;
+        margin-top: 1em;
+        padding: 1em;
+    }
+    nav a{
+        margin-bottom: 1em;
+    }
+    main{
+        margin: -9em auto;
+    }
+}
